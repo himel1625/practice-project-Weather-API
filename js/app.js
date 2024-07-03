@@ -1,5 +1,3 @@
-"use strict";
-
 const API_KEY = `14951c93f3d11e8ac8bed96dd90e8bc7`;
 
 const searchTemperature = () => {
@@ -15,10 +13,10 @@ const setInnerText = (id, text) => {
 };
 
 const displayTemperature = (temperature) => {
-  console.log(temperature);
+  // console.log(temperature);
   setInnerText("city", temperature.name);
-  setInnerText("temp", temperature.main.temp);
   setInnerText("weather", temperature.weather[0].main);
+  setInnerText("temp", temperature.main.temp);
 
   // weather icon settings
   const url = ` http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`;
