@@ -4,25 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <title>Weather-API</title>
+  <title>Todays-Weather</title>
 </head>
 
-<body>
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 p-10 rounded-xl ">
+<body class="bg-slate-400">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-2 p-10 rounded-xl bg-white border-blue-600">
 
-    <div class="flex gap-2" >
-      <input class=" border-2 p-1 rounded-lg font-medium " id="city-name" type="text" placeholder="Enter a lo: for Weather ...">
+    <div class="flex gap-1" >
+      <input class=" border-2 p-1 rounded-lg font-medium 
+      " id="city-name" type="text" placeholder="Enter a location">
       <div>
-        <button class="border-2 p-1 rounded-lg font-semibold" onclick="searchTemperature()" type="button" >Search</button>
+        <button  class="border-2 p-1 rounded-lg font-semibold hover:bg-black bg-none outline-none hover:text-white  " onclick="searchTemperature()" type="button" >Search</button>
       </div>
     </div>
 
   <div>
     <img class="ml-20" id="image-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="img coming soon ">
 
-    <div class="flex gap-2 text-center font-bold ml-8  ">
-      <h1 class="border-2  rounded-lg p-2 text-center " id="city">RanGpur</h1>
+    <div class="flex gap-3  font-bold ml-7  ">
+      <h1 class="border-2  rounded-lg p-2 text-center " id="city">Rangpur</h1>
       <h3 class="border-2  rounded-lg p-2"><span id="temp">26.92</span>&deg;C</h3>
       <h1 class="border-2 rounded-lg p-2 " id="weather">Clouds</h1>
     </div>
