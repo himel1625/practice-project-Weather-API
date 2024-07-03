@@ -9,10 +9,22 @@
 </head>
 
 <body>
-  <!-- header are  -->
-
-
-
+<div class="container">
+  <form >
+    <div >
+      <input id="city-name" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+      <div class="input-group-append">
+        <button onclick="searchTemperature()" type="button" >Search</button>
+      </div>
+    </div>
+  </form>
+  <div class="weather-status text-white text-center">
+    <img id="image-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="img caming son">
+    <h1 id="city">Dhaka</h1>
+    <h3><span id="temp">38.06</span>&deg;C</h3>
+    <h1 class="lead" id="weather">Clouds</h1>
+  </div>
+</div>
 
   <script src="js/app.js"></script>
 
