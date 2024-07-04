@@ -7,6 +7,11 @@ const searchTemperature = () => {
   fetch(url)
     .then((res) => res.json())
     .then((data) => displayTemperature(data));
+  
+  if (city === '') {
+    alert("please choose your location");
+    return
+  }
 };
 
 const setInnerText = (id, text) => {
